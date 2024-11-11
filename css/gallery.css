@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #caf6ff;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-top: 20px;
+}
+
+#gallery {
+  margin: 20px auto;
+}
+
+figure img {
+  border: 3px solid #dddddd;
+  border-radius: 5px;
+}
+
+figcaption {
+  margin: 10px 0 30px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li img {
+  cursor: pointer;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+  filter: grayscale(100%); /* for grey scale */
+}
+
+/* remove grey scale */
+ul li img.active {
+  filter: none;
+}
+
+/* for when hovered */
+ul li img:hover {
+  transform: scale(1.1);
+  border-color: #a0eeff;
+}
